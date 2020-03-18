@@ -106,9 +106,9 @@ int main() {
 
 			case 2: //ususiecie wybranego samochodu
 				int u;
-				cout << "Podaj numer samochodu, ktory chcesz usunac";
+				cout << "Podaj numer samochodu, ktory chcesz usunac ";
 				cin >> u;
-				spis.erase(spis.begin() + u);
+				spis.erase(spis.begin() + u - 1);
 				break;
 
 			case 3: //wyswietlanie listy samochodow
@@ -121,7 +121,7 @@ int main() {
 			case 4: //wyswietlanie danych wybranego samochodu
 				cout << "Podaj numer samochodu, ktory chcesz wyswietlic ";
 				cin >> r;
-				spis[r].wyswietl();
+				spis[r-1].wyswietl();
 				system("pause");
 				break;
 
